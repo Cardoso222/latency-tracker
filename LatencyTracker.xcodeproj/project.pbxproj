@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		47C6026E2B97AF6F00DE2D7D /* LatencyTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6026D2B97AF6F00DE2D7D /* LatencyTrackerApp.swift */; };
-		47C602702B97AF6F00DE2D7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6026F2B97AF6F00DE2D7D /* ContentView.swift */; };
+		47C602702B97AF6F00DE2D7D /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6026F2B97AF6F00DE2D7D /* SetupView.swift */; };
 		47C602722B97AF7000DE2D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C602712B97AF7000DE2D7D /* Assets.xcassets */; };
 		47C602752B97AF7000DE2D7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C602742B97AF7000DE2D7D /* Preview Assets.xcassets */; };
+		47C6027E2B97AFD000DE2D7D /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 47C6027D2B97AFD000DE2D7D /* LaunchAtLogin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47C6026A2B97AF6F00DE2D7D /* LatencyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatencyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C6026D2B97AF6F00DE2D7D /* LatencyTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyTrackerApp.swift; sourceTree = "<group>"; };
-		47C6026F2B97AF6F00DE2D7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		47C6026F2B97AF6F00DE2D7D /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		47C602712B97AF7000DE2D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47C602742B97AF7000DE2D7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47C602762B97AF7000DE2D7D /* LatencyTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LatencyTracker.entitlements; sourceTree = "<group>"; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C6027E2B97AFD000DE2D7D /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				47C6026D2B97AF6F00DE2D7D /* LatencyTrackerApp.swift */,
-				47C6026F2B97AF6F00DE2D7D /* ContentView.swift */,
+				47C6026F2B97AF6F00DE2D7D /* SetupView.swift */,
 				47C602712B97AF7000DE2D7D /* Assets.xcassets */,
 				47C602762B97AF7000DE2D7D /* LatencyTracker.entitlements */,
 				47C602732B97AF7000DE2D7D /* Preview Content */,
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = LatencyTracker;
+			packageProductDependencies = (
+				47C6027D2B97AFD000DE2D7D /* LaunchAtLogin */,
+			);
 			productName = LatencyTracker;
 			productReference = 47C6026A2B97AF6F00DE2D7D /* LatencyTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 47C602612B97AF6F00DE2D7D;
+			packageReferences = (
+				47C6027C2B97AFD000DE2D7D /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			productRefGroup = 47C6026B2B97AF6F00DE2D7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47C602702B97AF6F00DE2D7D /* ContentView.swift in Sources */,
+				47C602702B97AF6F00DE2D7D /* SetupView.swift in Sources */,
 				47C6026E2B97AF6F00DE2D7D /* LatencyTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47C6027C2B97AFD000DE2D7D /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47C6027D2B97AFD000DE2D7D /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C6027C2B97AFD000DE2D7D /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47C602622B97AF6F00DE2D7D /* Project object */;
 }
