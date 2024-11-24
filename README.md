@@ -2,7 +2,7 @@
 
 LatencyTracker is a lightweight macOS menu bar application that continuously monitors and displays your network latency to Google's servers. It provides a simple way to keep track of your connection's responsiveness in real-time.
 
-![LatencyTracker](assets/latency-tracker.mov)
+![LatencyTracker](assets/latency-tracker.gif)
 
 ## Features
 
